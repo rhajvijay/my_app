@@ -13,16 +13,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.deepPurple[200],
+        appBar: AppBar(
+          title: Text("Rhaj Vijay"),
+          backgroundColor: Colors.deepPurple,
+        ),
         body: Center(
          child: Container(
             height: 300,
             width: 300,
             decoration: BoxDecoration(
-              color: Colors.amber,
+              color: Colors.deepPurple,
               borderRadius: BorderRadius.circular(20)
             ),
             padding: EdgeInsets.all(25),
-            child: Text("Ansen Magizhan"),
+            child: Icon(
+              Icons.favorite,
+              color: Colors.white,
+              size: 64,
+            ),
 
           ),
         ),
